@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generated 9 ene 2024, 19:19:02 by Hibernate Tools 6.2.13.Final --><!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class catalog="empresa" name="miEmpresa.Productos" optimistic-lock="none" table="productos">
+        <id name="id" type="int">
+            <column name="id"/>
+            <generator class="assigned"/>
+        </id>
+        <property name="nombre" type="string">
+            <column length="20" name="nombre" not-null="true"/>
+        </property>
+        <property name="precio" type="double">
+            <column name="precio" not-null="true" precision="22" scale="0"/>
+        </property>
+    </class>
+</hibernate-mapping>
